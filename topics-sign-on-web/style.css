@@ -1,0 +1,583 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./font/bebas-neue/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo {
+    position: fixed;
+    right: 1.2rem;
+    top: 1.2rem;
+    top: 68.5rem;
+    left: 37rem;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+
+body {
+    cursor: url(./cursor/picsvg_download.svg), auto;
+    background-color: #136af7;
+}
+
+main {
+    margin: 0;
+    border: 0;
+    padding-top: 2rem;
+    padding-bottom: 15rem;
+    color: blck;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+}
+
+.icon-vaccinated {
+    position: absolute;
+    right: 16rem;
+    top: 1.5rem;
+}
+
+h1 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    right: 1.5rem;
+    top: 0rem;
+    padding: 0;
+    font-size: 2.5rem;
+    color: #ffeb09;
+    -webkit-text-stroke: 1.8px black;
+}
+
+.container {
+    padding: 2rem 0;
+    height: 100vh;
+    padding-left: 26rem;
+}
+
+.dot {
+    position: absolute;
+    height: 0.6rem;
+    width: 0.6rem;
+    z-index: 1;
+    border-radius: 0.6rem;
+    background-color: black;
+}
+
+#l-dot2,
+#l-dot4,
+#l-dot6 {
+    left: 2rem;
+}
+
+#l-dot3,
+#l-dot4 {
+    top: 1.5rem;
+}
+
+#l-dot5,
+#l-dot6 {
+    top: 3rem;
+}
+
+#r-dot1,
+#r-dot3,
+#r-dot5 {
+    left: 25rem;
+}
+
+#r-dot2,
+#r-dot4,
+#r-dot6 {
+    left: 27rem;
+}
+
+#r-dot3,
+#r-dot4 {
+    top: 1.5rem;
+}
+
+#r-dot5,
+#r-dot6 {
+    top: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    text-decoration: none;
+    color: #444444;
+}
+
+.Wrap {
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 34rem;
+    height: 7.5rem;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    border: 0.4rem solid black;
+    -webkit-text-stroke: 0.8px rgb(54, 155, 232);
+    z-index: 2;
+    color: #f0f0f0;
+    line-height: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 10px #444444 inset;
+    background-size: 30px 30px;
+    background-image: linear-gradient(to right, rgb(54, 155, 232) 1.2px, transparent 1px), linear-gradient(to bottom, rgb(54, 155, 232) 1.2px, transparent 1px);
+}
+
+.Wrap:hover {
+    background-color: #b9b9b9;
+    color: #b9b9b9;
+    animation: horizontal-shaking 1s infinite;
+}
+
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0)
+    }
+    25% {
+        transform: translateX(2px)
+    }
+    50% {
+        transform: translateX(-5px)
+    }
+    75% {
+        transform: translateX(5px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.Bandage {
+    background-color: #ffeb09;
+    border: 0.4rem solid black;
+    justify-content: middle;
+    width: 32rem;
+    height: 5.5rem;
+    border-radius: 3.8rem;
+    box-shadow: #444444 3px 3px, 0 0 10px #c1700f inset;
+}
+
+.Bandage:hover {
+    background-color: #e3b40a;
+    color: white;
+    cursor: url(./cursor/picsvg_download.svg), auto;
+    /* animation: shake 0.5s;
+    animation-iteration-count: infinite; */
+}
+
+#WrapEnglish {
+    position: absolute;
+    font-size: 1.6em;
+    left: 26rem;
+    top: 3.8rem;
+    z-index: 2;
+    transform: rotate(6deg);
+    font-family: 'Bebas Neue';
+}
+
+#BandageEnglish {
+    font-family: 'Bebas Neue';
+    padding: 1rem;
+    font-size: 4.8em;
+    transform: rotate(6deg);
+}
+
+#BandageEnglishtext {
+    font-family: 'Bebas Neue';
+    top: 4.8rem;
+    left: 33.2rem;
+    color: black;
+    background-color: none;
+    position: absolute;
+    padding: 1rem;
+    font-size: 4.2em;
+    transform: rotate(6.5deg) scale(1, 1.5);
+}
+
+#BandageEnglishtext:hover {
+    color: white;
+    cursor: url(./cursor/picsvg_download.svg), auto;
+}
+
+#dots-english {
+    position: absolute;
+    left: 29.8rem;
+    top: 4.8rem;
+    z-index: 2;
+    transform: rotate(6deg);
+}
+
+#WrapChinese {
+    position: absolute;
+    left: 26rem;
+    top: 12rem;
+    font-size: 1.4rem;
+    line-height: 0.1rem;
+    -webkit-text-stroke: 1.4px rgb(54, 155, 232);
+}
+
+#BandageChinese {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 0.4rem;
+    padding-bottom: 1.6rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 4.2rem;
+}
+
+#dots-chinese {
+    position: absolute;
+    left: 29rem;
+    top: 14.5rem;
+    z-index: 2;
+}
+
+#WrapKorean {
+    position: absolute;
+    left: 26rem;
+    top: 20.5rem;
+    z-index: 2;
+    font-size: 1.58rem;
+    transform: rotate(6deg);
+    -webkit-text-stroke: 1.4px rgb(54, 155, 232);
+}
+
+#BandageKorean {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-weight: bold;
+    padding-top: 2.3rem;
+    font-size: 2.5em;
+    line-height: 0.1rem;
+    transform: rotate(6deg);
+}
+
+#dots-korean {
+    position: absolute;
+    left: 29.5rem;
+    top: 21.5rem;
+    z-index: 2;
+    transform: rotate(6deg);
+}
+
+#WrapSpanish {
+    position: absolute;
+    font-family: 'Bebas Neue';
+    left: 26rem;
+    top: 29rem;
+    transform: rotate(-6deg);
+    font-size: 1.6rem;
+}
+
+#BandageSpanish {
+    font-family: 'Bebas Neue';
+    padding: 1rem;
+    font-size: 4.5em;
+    transform: rotate(-6deg);
+}
+
+#dots-spanish {
+    position: absolute;
+    left: 29.5rem;
+    top: 33rem;
+    z-index: 2;
+    transform: rotate(-6deg);
+}
+
+#WrapRussian {
+    position: absolute;
+    -webkit-text-stroke: 1.4px rgb(54, 155, 232);
+    left: 26rem;
+    top: 37.5rem;
+    font-size: 1.43rem;
+}
+
+#BandageRussian {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 2.8rem;
+}
+
+#dots-russian {
+    position: absolute;
+    left: 29rem;
+    top: 39.5rem;
+    z-index: 2;
+}
+
+#WrapHaitian {
+    position: absolute;
+    font-family: 'Bebas Neue';
+    left: 26.2rem;
+    top: 45.6rem;
+    transform: rotate(5deg);
+}
+
+#BandageHaitian {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    padding-bottom: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 3.8em;
+    line-height: 0.1rem;
+    transform: rotate(6deg);
+}
+
+#dots-haitian {
+    position: absolute;
+    left: 29.2rem;
+    top: 46.5rem;
+    z-index: 2;
+    transform: rotate(6deg);
+}
+
+#BandageVietnamese {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 3.4rem;
+    transform: rotate(-6deg);
+}
+
+#WrapVietnamese {
+    position: absolute;
+    left: 26.2rem;
+    top: 54rem;
+    font-family: 'Bebas Neue';
+    transform: rotate(-6deg);
+}
+
+#dots-vietnamese {
+    position: absolute;
+    left: 29rem;
+    top: 58rem;
+    z-index: 2;
+    transform: rotate(-6deg);
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .icon-vaccinated {
+        left: 3rem;
+        width: 40px;
+        height: auto;
+        top: 1.2rem;
+    }
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        left: 6.4rem;
+        top: 0rem;
+        color: black;
+    }
+    .dot {
+        transform: scale(0.5);
+        position: absolute;
+        left: 0;
+    }
+    #dots-english,
+    #dots-chinese,
+    #dots-korean,
+    #dots-russian,
+    #dots-haitian,
+    #dots-spanish,
+    #dots-vietnamese {
+        left: 0;
+        transform: rotate(0deg)
+    }
+    #dots-english {
+        top: 5rem;
+    }
+    #dots-chinese {
+        top: 9.8rem;
+    }
+    #dots-korean {
+        top: 14.5rem;
+    }
+    #dots-russian {
+        top: 19.5rem;
+    }
+    #dots-haitian {
+        top: 24.5rem;
+    }
+    #dots-spanish {
+        top: 29.5rem;
+    }
+    #dots-vietnamese {
+        top: 34.5rem;
+    }
+    #l-dot1,
+    #l-dot3,
+    #l-dot5 {
+        left: 1rem;
+    }
+    #l-dot2,
+    #l-dot4,
+    #l-dot6 {
+        left: 2rem;
+    }
+    #l-dot3,
+    #l-dot4 {
+        top: 0.75rem;
+    }
+    #l-dot5,
+    #l-dot6 {
+        top: 1.5rem;
+    }
+    #r-dot1,
+    #r-dot3,
+    #r-dot5 {
+        left: 17rem;
+    }
+    #r-dot2,
+    #r-dot4,
+    #r-dot6 {
+        left: 18rem;
+    }
+    #r-dot3,
+    #r-dot4 {
+        top: 0.75rem;
+    }
+    #r-dot5,
+    #r-dot6 {
+        top: 1.5rem;
+    }
+    main {
+        padding-left: 0;
+    }
+    body {
+        padding-left: 0;
+        background-color: #ffda35;
+    }
+    h1 {
+        font-size: 1.9rem;
+        color: #65baff;
+        -webkit-text-stroke: 1.3px black;
+    }
+    .container {
+        padding-left: 0rem;
+        justify-content: center;
+        margin: 0;
+        border: 0;
+        font-size: 1rem;
+        font-size: 0.5rem;
+    }
+    .Wrap {
+        border: 0.4rem solid black;
+        padding-left: 0rem;
+        position: absolute;
+        width: 100%;
+        padding: 0, 0;
+        height: 3.5rem;
+        -webkit-text-stroke: 0.5px #ffeb09;
+        z-index: 2;
+        color: #65baff;
+        background-color: #65baff;
+        line-height: 0rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        box-shadow: 0 0 5px #444444 inset;
+        background-size: 15px 15px;
+        background-image: linear-gradient(to right, #ffeb09 1px, transparent 1px), linear-gradient(to bottom, #ffeb09 1px, transparent 1px);
+    }
+    .Wrap:hover {
+        background-color: #2196F3;
+    }
+    #BandageEnglish,
+    #BandageEnglishtext,
+    #BandageChinese,
+    #BandageKorean,
+    #BandageRussian,
+    #BandageSpanish,
+    #BandageHaitian,
+    #BandageVietnamese {
+        width: 100%;
+        border-radius: 2.2rem;
+        height: 2rem;
+        padding: 1rem 2.8rem;
+        font-size: 1rem;
+        transform: rotate(0);
+    }
+    #BandageEnglishtext {
+        left: 0;
+    }
+    #BandageChinese,
+    #BandageKorean,
+    #BandageRussian,
+    #BandageSpanish,
+    #BandageVietnamese {
+        padding-top: 1.5rem;
+        height: 1.5rem;
+    }
+    #WrapEnglish,
+    #WrapChinese,
+    #WrapKorean,
+    #WrapRussian,
+    #WrapSpanish,
+    #WrapHaitian,
+    #WrapVietnamese {
+        width: 105%;
+        border-radius: 2.2rem;
+        height: 3rem;
+        padding: 0.5rem 2.5rem;
+        font-size: 1rem;
+        transform: rotate(0);
+        font-size: 0.7rem;
+        left: 0;
+    }
+    #WrapChinese {
+        top: 8.5rem;
+        font-size: 0.6rem;
+        -webkit-text-stroke: 0.7px #ffeb09;
+    }
+    #WrapKorean {
+        top: 13.3rem;
+        -webkit-text-stroke: 0.7px #ffeb09;
+    }
+    #WrapRussian {
+        top: 23.2rem;
+        font-size: 0.6rem;
+        -webkit-text-stroke: 0.7px #ffeb09;
+        ;
+    }
+    #WrapSpanish {
+        top: 18.2rem;
+    }
+    #WrapHaitian {
+        top: 28.2rem;
+    }
+    #WrapVietnamese {
+        top: 33.2rem;
+    }
+}

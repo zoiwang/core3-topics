@@ -1,0 +1,202 @@
+/*cursor*/
+
+cursor {
+    display: hidden;
+}
+
+#msg {
+    position: absolute;
+    left: 46%;
+    top: 40%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-family: monospace;
+    font-weight: 500;
+    color: white;
+}
+
+#object {
+    margin: 1rem;
+    padding: 0.3em;
+    border: solid 0.25em rgb(255, 130, 188);
+    background: transparent;
+    filter: blur(2.6px);
+    /* box-shadow: 200px 100px 50px 15px rgb(255, 130, 188); */
+    animation-name: revolve;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+}
+
+@keyframes revolve {
+    0% {
+        transform: rotate(20deg);
+    }
+    10% {
+        transform: rotate(30deg);
+    }
+    20% {
+        transform: rotate(40deg);
+    }
+    30% {
+        transform: rotate(50deg);
+    }
+    40% {
+        transform: rotate(70deg);
+    }
+    50% {
+        transform: rotate(100deg);
+    }
+    70% {
+        transform: rotate(140deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    color: white;
+}
+
+video {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Divider */
+
+h1 {
+    position: fixed;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    padding: 0rem 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    top: 0;
+    animation: blur 4s ease 0s infinite;
+}
+
+@keyframes blur {
+    0%,
+    90% {
+        filter: blur(0px);
+    }
+    50% {
+        filter: blur(50px);
+    }
+}
+
+
+/* Divider */
+
+main {
+    padding: 20rem 1.5rem;
+}
+
+h2 {
+    position: absolute;
+    top: 10%;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 300;
+    filter: blur(2px);
+    text-align: left;
+    line-height: 1rem;
+    background: linear-gradient(to right, rgb(176, 255, 173), rgb(255, 181, 214)), linear-gradient(to right, rgb(255, 130, 188), rgb(255, 214, 132), rgb(152, 226, 255));
+    background-size: 0 0.1em, 0 0.1em;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+h2:hover {
+    position: absolute;
+    font-style: italic;
+    filter: blur(0px);
+    font-size: 2rem;
+    margin: 5rem 0;
+    padding-top: 5rem;
+    margin-left: 2rem;
+    color: rgb(255, 118, 164);
+    background-size: 0 0.1em, 5rem 0.1em;
+    top: 36%;
+    left: 30rem;
+}
+
+h2:active {
+    color: rgb(255, 118, 164);
+    filter: blur(1px);
+}
+
+#project2 {
+    left: 3rem;
+}
+
+#project3 {
+    left: 6rem;
+}
+
+#project4 {
+    left: 9rem;
+}
+
+#project5 {
+    left: 12rem;
+}
+
+#project6 {
+    left: 15rem;
+}
+
+#project1:hover {
+    left: 40rem;
+}
+
+#project2:hover {
+    left: 40rem;
+}
+
+#project3:hover {
+    left: 40rem;
+}
+
+#project4:hover {
+    left: 40rem;
+}
+
+#project5:hover {
+    left: 40rem;
+}
+
+#project6:hover {
+    left: 40rem;
+}
+
+div {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+}

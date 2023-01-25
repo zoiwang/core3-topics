@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Biogem';
+    src: url('./font/BiogemExtraBold/Biogem-ExtraBold.woff2') format('woff2'), url('./font/BiogemExtraBold/Biogem-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+#canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    filter: blur(3px);
+    /* padding: 3em 0; */
+}
+
+body {
+    background-color: #870505;
+    background-color: #8f0000;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+header {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5 {
+    padding: 0rem 0em;
+    list-style: none;
+    font-size: 1em;
+    border: 0;
+    margin: 0;
+    text-align: left;
+    color: white;
+    padding-right: 2em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+h1 {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    border: 0;
+    margin: 0;
+    font-size: 6.5em;
+    color: rgb(233, 227, 226);
+    /* color: #8f0000; */
+    transform: scale(1.2, 1);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding-top: 0em;
+    /* border: 3em solid black;
+    background-color: black; */
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+    padding: 3.8em 0;
+    transform: scale(0.65, 0.65);
+}
+
+.lyrics {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: rgb(233, 227, 226);
+    font-size: 1.6em;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 0.6em;
+    padding: 5em 0;
+    background-color: black;
+    color: #8f0000;
+    text-transform: uppercase;
+}
+
+.ScrollingLyrics {
+    font-family: 'Biogem';
+    font-size: 2.2em;
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 300s infinite linear;
+    padding-left: 100%;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    /*Initial offset, which places the text off-screen*/
+    color: #8f0000;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes floatText {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.ScrollingLyrics:hover {
+    animation-play-state: paused;
+    color: rgb(196, 196, 196);
+    /* background-color: rgb(234, 234, 234); */
+}

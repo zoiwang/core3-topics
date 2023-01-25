@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Up to You</title>
+    <style>
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 15px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(56, 142, 255);
+            border-radius: 10px;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgb(105, 190, 255);
+            border-radius: 10px;
+            border: 3px solid rgb(56, 142, 255);
+        }
+        /* Handle  on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgb(38, 161, 255);
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./img/vaccinated.png">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<body onload="move('Wrap')">
+
+
+
+    <header>
+        <img class="icon-vaccinated" src="./img/vaccinated.png" width="50px">
+        <h1>264,112,767</h1>
+    </header>
+    <main>
+        <!-- Wraps -->
+        <div class="Wrap" id="WrapEnglish">
+            <p>COVID-19 VACCINATION COVID-19 VACCINATION COVID-19 </p>
+            <p>COVID-19 VACCINATION COVID-19 VACCINATION COVID-19 </p>
+            <p>COVID-19 VACCINATION COVID-19 VACCINATION COVID-19 </p>
+            <p>COVID-19 VACCINATION COVID-19 VACCINATION COVID-19 </p>
+        </div>
+        <div class="Wrap" id="WrapChinese">
+            <p>新冠肺炎疫苗 新冠肺炎疫苗 新冠肺炎疫苗</p>
+            <p>新冠肺炎疫苗 新冠肺炎疫苗 新冠肺炎疫苗</p>
+            <p>新冠肺炎疫苗 新冠肺炎疫苗 新冠肺炎疫苗</p>
+            <p>新冠肺炎疫苗 新冠肺炎疫苗 新冠肺炎疫苗</p>
+        </div>
+        <div class="Wrap" id="WrapSpanish">
+            <p>vacunas contra el COVID-19 vacunas contra el COVID-19</p>
+            <p>vacunas contra el COVID-19 vacunas contra el COVID-19</p>
+            <p>vacunas contra el COVID-19 vacunas contra el COVID-19</p>
+            <p>vacunas contra el COVID-19 vacunas contra el COVID-19</p>
+        </div>
+        <div class="Wrap" id="WrapKorean">
+            <p>코로나19 코로나19 코로나19 코로나19</p>
+            <p>코로나19 코로나19 코로나19 코로나19</p>
+            <p>코로나19 코로나19 코로나19 코로나19</p>
+            <p>코로나19 코로나19 코로나19 코로나19</p>
+        </div>
+        <div class="Wrap" id="WrapRussian">
+            <p>вакцинах COVID-19 вакцинах COVID-19</p>
+            <p>вакцинах COVID-19 вакцинах COVID-19</p>
+            <p>вакцинах COVID-19 вакцинах COVID-19</p>
+            <p>вакцинах COVID-19 вакцинах COVID-19</p>
+        </div>
+        <div class="Wrap" id="WrapHaitian">
+            <p>Vaksen kont COVID-19 Vaksen kont COVID-19</p>
+            <p>Vaksen kont COVID-19 Vaksen kont COVID-19</p>
+            <p>Vaksen kont COVID-19 Vaksen kont COVID-19</p>
+            <p>Vaksen kont COVID-19 Vaksen kont COVID-19</p>
+        </div>
+        <div class="Wrap" id="WrapVietnamese">
+            <p>vắc-xin ngừa COVID-19 vắc-xin ngừa COVID-19</p>
+            <p>vắc-xin ngừa COVID-19 vắc-xin ngừa COVID-19</p>
+            <p>vắc-xin ngừa COVID-19 vắc-xin ngừa COVID-19</p>
+            <p>vắc-xin ngừa COVID-19 vắc-xin ngừa COVID-19</p>
+        </div>
+
+        <!-- Behind Texts -->
+        <div class="dots" id="dots-english">
+            <div class="dot" id="l-dot1"></div>
+            <div class="dot" id="l-dot2"></div>
+            <div class="dot" id="l-dot3"></div>
+            <div class="dot" id="l-dot4"></div>
+            <div class="dot" id="l-dot5"></div>
+            <div class="dot" id="l-dot6"></div>
+            <div class="dot" id="r-dot1"></div>
+            <div class="dot" id="r-dot2"></div>
+            <div class="dot" id="r-dot3"></div>
+            <div class="dot" id="r-dot4"></div>
+            <div class="dot" id="r-dot5"></div>
+            <div class="dot" id="r-dot6"></div>
+        </div>
+        <div class="dots" id="dots-chinese">
+            <div class="dot" id="l-dot1"></div>
+            <div class="dot" id="l-dot2"></div>
+            <div class="dot" id="l-dot3"></div>
+            <div class="dot" id="l-dot4"></div>
+            <div class="dot" id="l-dot5"></div>
+            <div class="dot" id="l-dot6"></div>
+            <div class="dot" id="r-dot1"></div>
+            <div class="dot" id="r-dot2"></div>
+            <div class="dot" id="r-dot3"></div>
+            <div class="dot" id="r-dot4"></div>
+            <div class="dot" id="r-dot5"></div>
+            <div class="dot" id="r-dot6"></div>
+        </div>
+        <div class="dots" id="dots-korean">
+            <div class="dot" id="l-dot1"></div>
+            <div class="dot" id="l-dot2"></div>
+            <div class="dot" id="l-dot3"></div>
+            <div class="dot" id="l-dot4"></div>
+            <div class="dot" id="l-dot5"></div>
+            <div class="dot" id="l-dot6"></div>
+            <div class="dot" id="r-dot1"></div>
+            <div class="dot" id="r-dot2"></div>
+            <div class="dot" id="r-dot3"></div>
+            <div class="dot" id="r-dot4"></div>
+            <div class="dot" id="r-dot5"></div>
+            <div class="dot" id="r-dot6"></div>
+        </div>
+        <div class="dots" id="dots-spanish">
+            <div class="dot" id="l-dot1"></div>
+            <div class="dot" id="l-dot2"></div>
+            <div class="dot" id="l-dot3"></div>
+            <div class="dot" id="l-dot4"></div>
+            <div class="dot" id="l-dot5"></div>
+            <div class="dot" id="l-dot6"></div>
+            <div class="dot" id="r-dot1"></div>
+            <div class="dot" id="r-dot2"></div>
+            <div class="dot" id="r-dot3"></div>
+            <div class="dot" id="r-dot4"></div>
+            <div class="dot" id="r-dot5"></div>
+            <div class="dot" id="r-dot6"></div>
+        </div>
+        <div class="dots" id="dots-russian">
+            <div class="dot" id="l-dot1"></div>
+            <div class="dot" id="l-dot2"></div>
+            <div class="dot" id="l-dot3"></div>
+            <div class="dot" id="l-dot4"></div>
+            <div class="dot" id="l-dot5"></div>
+            <div class="dot" id="l-dot6"></div>
+            <div class="dot" id="r-dot1"></div>
+            <div class="dot" id="r-dot2"></div>
+            <div class="dot" id="r-dot3"></div>
+            <div class="dot" id="r-dot4"></div>
+            <div class="dot" id="r-dot5"></div>
+            <div class="dot" id="r-dot6"></div>
+        </div>
+        <div class="dots" id="dots-haitian">
+            <div class="dot" id="l-dot1"></div>
+            <div class="dot" id="l-dot2"></div>
+            <div class="dot" id="l-dot3"></div>
+            <div class="dot" id="l-dot4"></div>
+            <div class="dot" id="l-dot5"></div>
+            <div class="dot" id="l-dot6"></div>
+            <div class="dot" id="r-dot1"></div>
+            <div class="dot" id="r-dot2"></div>
+            <div class="dot" id="r-dot3"></div>
+            <div class="dot" id="r-dot4"></div>
+            <div class="dot" id="r-dot5"></div>
+            <div class="dot" id="r-dot6"></div>
+        </div>
+        <div class="dots" id="dots-vietnamese">
+            <div class="dot" id="l-dot1"></div>
+            <div class="dot" id="l-dot2"></div>
+            <div class="dot" id="l-dot3"></div>
+            <div class="dot" id="l-dot4"></div>
+            <div class="dot" id="l-dot5"></div>
+            <div class="dot" id="l-dot6"></div>
+            <div class="dot" id="r-dot1"></div>
+            <div class="dot" id="r-dot2"></div>
+            <div class="dot" id="r-dot3"></div>
+            <div class="dot" id="r-dot4"></div>
+            <div class="dot" id="r-dot5"></div>
+            <div class="dot" id="r-dot6"></div>
+        </div>
+        <div class="container">
+
+            <div class="Bandage" id="BandageEnglish">
+                <a href="https://getvaccineanswers.org/" target="_blank"></a>
+            </div>
+            <div id="BandageEnglishtext"><a href="https://getvaccineanswers.org/" target="_blank">It's Up to You</a></div>
+            <div class="Bandage" id="BandageChinese">
+                <a href="https://chinese.getvaccineanswers.org/" target="_blank">由你决定</a></div>
+            <div class="Bandage" id="BandageKorean"><a href="https://korean.getvaccineanswers.org/" target="_blank">그것은 당신에게
+            <p>달려 있습니다</p></p></a>
+            </div>
+            <div class="Bandage" id="BandageSpanish"><a href="https://spanish.getvaccineanswers.org/?utm_source=detidepende.org&utm_medium=redirect&utm_campaign=AC_VCIN&utm_content=BRND_HSPC__SP_VanityURL" target="_blank">De Ti Depende</a></div>
+            <div class="Bandage" id="BandageRussian">
+                <a href="https://russian.getvaccineanswers.org/" target="_blank">тебе решать</a></div>
+            <div class="Bandage" id="BandageHaitian">
+                <a href="https://haitiancreole.getvaccineanswers.org/" target="_blank">
+                    <p></p>sa depann de ou</a>
+            </div>
+            <div class="Bandage" id="BandageVietnamese">
+                <a href="https://vietnamese.getvaccineanswers.org/" target="_blank">Tuỳ bạn</a></div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<div id="content">
+    <h2>Chapter 1</h2>
+    <p></p>
+    <figure class="big-figure">
+        <img src="figure1.png" />
+    </figure>
+</div>
+
+<script>
+    Bindery.makeBook({
+        content: '#content',
+        rules: [
+            Bindery.PageBreak({
+                selector: 'h2',
+                position: 'before'
+            }),
+            Bindery.FullBleedSpread({
+                selector: '.big-figure'
+            }),
+        ],
+    });
+</script>
